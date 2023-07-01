@@ -1,1 +1,463 @@
+*{
+   
+    font-family:cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+
+  /* navigation bar */
+
+  .topnav {
+    
+    background-color: #000000;
+
+    
+
+    height: 15vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: -26px;
+    overflow: hidden;
+    
+  }
+  
+  .topnav a {
+    float: left;
+    color: rgb(251, 0, 0);
+    text-align: center;
+    padding: 20px 80px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+
+ 
+  
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #f60606;
+    color: white;   
+  }
+
+ 
+/* start animation */
+
+ img{
+    height:700px;
+    width: 700px;
+    margin-left:-200px;
+    margin-top:-25px;
+    color: #000000;
+    padding:200px;
+}
+
+  .intro{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 400;
+    
+    margin-top: -900px;
+    margin-left: 400px;;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+} 
+.welcome{
+    color: red;
+    font-size: 25px;
+    font-weight: 250px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:310px;
+        
+} 
+
+
+.wrapper{
+    display: flex;
+    min-height: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper .static-txt{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 350px;
+}
+
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    line-height: 90px;
+    
+    height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txt li{
+    list-style: none;
+    color: red;
+    font-size: 60px;
+    font-weight: 500;
+    top:0;
+    position: relative;
+    animation :slide  12s steps(4) infinite; 
+}
+
+@keyframes slide{
+    100%{
+        top :-360px;
+    }
+}
+
+.dynamic-txt li{
+position: relative;
+}
+
+.dynamic-txt li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#000000;
+    border-left: 2px solid red;
+    animation: typing 3s steps(13) infinite;
+}
+@keyframes typing {
+    40%,
+    60%{
+        left : calc(100% + 30px)
+    }
+}
+
+
+
+/* About page  */
+
+
+ #about{
+   
+     height: 760px;
+     display: inline-block;
+     width: 100%;
+     font-size: 30px;
+     color: rgb(255, 13, 13);
+     background-color: black;
+     margin-top: 250px;
+ }
+ 
+ .about_info{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family:cursive;
+    text-align: center;  
+  }
+ 
+  .topbox{
+    position: relative;
+    width: 1200px; 
+    height: 250px;
+    margin-top: 90px ;
+    margin-left: 100px;
+    
+ 
+ }
+  .topbox .firstbox{
+     position: relative;
+     width: calc(400px - 30px);
+     height: calc(200px-30px);
+     background-color: #26b583;
+     float: left;
+     margin: 15px;
+     box-sizing: border-box;
+     overflow: hidden;
+     border-radius: 10px;
+     color: white;
+ 
+  }
+  .firstbox  .icon{
+     text-align: center;
+     size: 200px;
+     
+     margin-top: 30px;
+  }
+  .firstbox h3{
+     text-align:center ;
+     justify-content: center;
+  }
+ 
+  .firstbox p{
+     text-align: center;
+     margin-top: -25px;
+  }
+ /* second box */
+ 
+  .topbox .secondbox{
+     position: relative;
+     width: calc(400px - 30px);
+     height: calc(300px-30px);
+     background-color: #88d621;
+     float: left;
+     margin: 15px;
+     box-sizing: border-box;
+     overflow: hidden;
+     border-radius: 10px;
+     color: white;
+
+ 
+  }
+  .secondbox .icon{
+    text-align: center;
+     margin-top: 3px;
+  }
+  .secondbox h3{
+     text-align:center ;
+  }
+ 
+  .secondbox p{
+     text-align: center;
+     margin-top: -25px;
+  }
+ 
+ 
+ /* third box */
+ 
+  .topbox .thirdbox{
+     position: relative;
+     width: calc(400px - 30px);
+     height: calc(300px-30px);
+     background-color: #2581d6;
+     float: left;
+     margin: 15px;
+     box-sizing: border-box;
+     overflow: hidden;
+     border-radius: 10px;
+     color: white;
+
+ 
+  }
+  .thirdbox .icon{
+    text-align: center;
+     margin-top: -5px;
+  }
+  .thirdbox h3{
+     text-align:center ;
+  }
+ 
+  .thirdbox p{
+     text-align: center;
+     margin-top: -25px;
+  }
+ 
+  /* hovor css*/
+  
+  .topbox .firstbox:hover{
+    color: aliceblue;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+  }
+  .topbox .secondbox:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+  }
+  .topbox .thirdbox:hover{
+    color: rgb(255, 255, 255);
+    /* width: calc(400px - 32px);
+    height: calc(301px-31px); */
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+  } 
+
+
+  /* resume page  */
+
+
+  #resume h1{
+    color: rgb(255, 8, 8);
+    margin-left: 600px;
+    margin-top: 60px;
+    font-size: 40px;
+}
+ .resumeheading {
+     background-color: rgb(255, 255, 255);
+     color: rgb(255, 0, 0);
+     height: 35px;
+     justify-content: center;
+     margin-top: 45px;
+   
+}
+.resumeheading h3{
+    margin-left: 40px;
+    
+}
+ul{
+    color: white;
+}
+
+.summarytext  p{
+    color: white;
+}
+
+
+
+.btn {
+    background-color: rgb(255, 21, 0);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  
+  
+  .btn:hover {
+    background-color: rgb(46, 106, 155);
+  }
+ .btn{
+    margin-left: 50px;
+    margin-top: 50px;
+ }
+
+
+ /* contact us page  */
+
+ 
+.Us button {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.Us button:hover {
+    color: red;
+    background-color:   rgb(106, 80, 80);
+}
+
+.but img {
+    background-color: white;
+    border-radius: 25px;
+    width: 45px;
+    margin-top: 30px;
+}
+
+.but img:hover {
+    width: 50px;
+}
+
+.icons {
+    height: auto;
+    width: 104vh;
+    text-align: center;
+
+}
+
+
+.icons h1 {
+    font-size: 40px;
+    margin-top: 200px;
+    margin-left: -70px;
+    margin-right: 0%;
+    padding: 20px;
+}
+
+.icons h2{
+    color:#C4EAFA ;
+    margin-bottom: 50px;
+}
+
+.icons img {
+    border: 1px solid white;
+    width: 30px;
+    padding: 10px;
+    border-radius: 13px;
+    height: 30px;
+}
+
+.icons img:hover {
+    width: 40px;
+    transition: 0.4s;
+    background-color: rgb(196, 234, 240);
+}
+
+
+  
+  
+form{
+    margin-left: 800px;
+    margin-top: -250px;
+    margin-right: 250px;
+    border: 3px solid rgb(255, 255, 255);
+    
+    padding: 12px 30px;
+        
+}
+ h1{
+    color: rgb(225, 17, 17);
+    font-size: 30px;
+    text-align: center;
+    
+    
+    
+}
+.name,.number,.email {
+    border: 3px solid white;
+    width: 300px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.name:hover,
+.number:hover,
+.email:hover,
+.me textarea:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+.us textarea {
+    height: 45px;
+    width: 250px;
+    border: 2px solid;
+    margin: 10px 33px;
+}
+
+.us button{
+    margin-left: 130px;
+}
+
+.us button:hover{
+    background-color: rgb(255, 0, 0);
+    
+    
+}
+.copy{
+    color: white;
+    text-align: center;
+    margin-top: 110px;
+}
+
+
+
+
 

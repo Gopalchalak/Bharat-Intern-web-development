@@ -15,8 +15,12 @@ body{
     height: 70px;
     width: 100%;
     align-items: center;
-    margin:30px
-
+    display:flex;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    top: 0%;
+    /* border: 2px solid red; */
 }
 
 .topnav a{
@@ -25,8 +29,8 @@ body{
     padding: 20px 90px;
     font-size: 30px;
     float: left;
-    position:sticky;
     text-decoration:none;
+    margin-left: 50px;
     
 }
 .topnav a:hover{
@@ -38,7 +42,7 @@ img{
 width:800px;
     float: left;
     /* border: 2px solid red; */
-    margin: 140px 10px 10px auto;
+    margin: 10px 10px 10px auto;
 }
 
 
@@ -49,7 +53,7 @@ width:800px;
     display :flex;
     position:relative;       
     justify-content : right; 
-    margin:200px 5px 10px 10px;
+    margin:300px 5px 10px 10px;
     /* border: 2px solid red; */
     width: 590px;
      
@@ -135,7 +139,7 @@ position: relative;
     color: red;
     font-size: 50px;
     
-    margin-top: 260px;  
+    margin-top: 300px;  
     /* border: 2px solid red; */
     
 }

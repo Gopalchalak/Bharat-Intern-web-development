@@ -1,85 +1,61 @@
-*{
-   
-    font-family:cursive;
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0) ;
+    font-family: 'Ubuntu';
 }
+  
+/* navigation bar  */
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-  }
-
-  /* navigation bar */
-
-  .topnav {
-    
-    background-color: #000000;
-    height: 15vh;
+.topnav{
+    background-color: rgb(0, 0, 0);
+    height: 70px;
     width: 100%;
     align-items: center;
-    display: flex;
-    position: fixed;
-    top: -26px;
-    overflow: hidden;
-    
-    
-  }
-  
-  .topnav a {
-    float: left;
-    color: rgb(251, 0, 0);
-    text-align: center;
-    padding: 20px 80px;
-    text-decoration: none;
-    font-size: 17px;
-    
-  }
+    margin:30px
 
- 
-  
-  .topnav a:hover {
-    background-color: #ffffff;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #f60606;
-    color: white;   
-  }
-
- 
-/* start animation */
-
- img{
-    height:700px;
-    width: 700px;
-    margin-left:-200px;
-    margin-top:-25px;
-    color: #000000;
-    padding:200px;
 }
 
-  .intro{
+.topnav a{
+    color: red;
+    text-align: center;
+    padding: 20px 90px;
+    font-size: 30px;
+    float: left;
+    position:sticky;
+    text-decoration:none;
+    
+}
+.topnav a:hover{
+    background-color: white;
+    color: black;
+}
+
+img{
+width:800px;
+    float: left;
+    /* border: 2px solid red; */
+    margin: 140px 10px 10px auto;
+}
+
+
+.intro{
     color: rgb(255, 255, 255);
     font-size: 60px;
     font-weight: 400;
-    
-    margin-top: -100px;
-    margin-left: 400px;;
     display :flex;
-    justify-content: center;
-    align-items: center;
-} 
-.welcome{
-    color: red;
-    font-size: 25px;
-    font-weight: 250px;
-    display :flex;
-    justify-content: center;
-    align-items: center;
-    margin-left:310px;
+    position:relative;       
+    justify-content : right; 
+    margin:200px 5px 10px 10px;
+    /* border: 2px solid red; */
+    width: 590px;
+     
         
 } 
+
 
 
 .wrapper{
@@ -94,15 +70,23 @@ body {
     color: rgb(255, 255, 255);
     font-size: 60px;
     font-weight: 400;
-    margin-left: 350px;
+    
 }
 
 .wrapper .dynamic-txt{
-    margin-left: 15px;
+   
     line-height: 90px;
-    
     height: 90px;
     overflow: hidden;
+    z-index: 0;
+}
+.wrapper, .dynamic-txt{
+    /* border: 2px solid red; */
+    justify-content: right  ;
+    margin: 10px 30px 10px auto;
+    width: 580px;
+    
+    
 }
 
 .dynamic-txt li{
@@ -141,45 +125,41 @@ position: relative;
     40%,
     60%{
         left : calc(100% + 30px)
+        
     }
 }
 
+/*  about me  */
 
+.aboutHeader{
+    color: red;
+    font-size: 50px;
+    
+    margin-top: 260px;  
+    /* border: 2px solid red; */
+    
+}
 
-/* About page  */
+.aboutinfo{
+    color:white;
+    font-size: 25px;
+    text-align: justify;
+    margin: 50px 30px 30px 30px;
 
+}
 
- #about{
-   
-     height: 760px;
-     display: inline-block;
-     width: 100%;
-     font-size: 30px;
-     color: rgb(255, 13, 13);
-     background-color: black;
-     margin-top: 250px;
- }
- 
- .about_info{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family:cursive;
-    text-align: center;  
-  }
- 
-  .topbox{
-    position:relativ;
+.topbox{
+    position: relative;
     width: 1200px; 
-    height: 250px;
+    height: 400px;
     margin-top: 90px ;
     margin-left: 100px;
+    /* border: 2px solid red; */
     
  
  }
   .topbox .firstbox{
-     position:static;
+     position: relative;
      width: calc(400px - 30px);
      height: calc(200px-30px);
      background-color: #26b583;
@@ -187,29 +167,31 @@ position: relative;
      margin: 15px;
      box-sizing: border-box;
      overflow: hidden;
-     border-radius: 10px;
-     color: white;
+     border-radius: 30px;
  
   }
   .firstbox  .icon{
      text-align: center;
-     size: 200px;
+     font-size: 40px;
      
      margin-top: 30px;
   }
-  .firstbox h3{
+  .firstbox h2{
      text-align:center ;
      justify-content: center;
+     margin: 30px 20px 10px  20px;
+     /* border: 1px solid red; */
   }
  
   .firstbox p{
      text-align: center;
-     margin-top: -25px;
+     margin-top: 10px;
+     font-size: 25px;
   }
  /* second box */
  
   .topbox .secondbox{
-     position: static;
+     position: relative;
      width: calc(400px - 30px);
      height: calc(300px-30px);
      background-color: #88d621;
@@ -217,29 +199,32 @@ position: relative;
      margin: 15px;
      box-sizing: border-box;
      overflow: hidden;
-     border-radius: 10px;
-     color: white;
-
+     border-radius: 30px;
  
   }
   .secondbox .icon{
     text-align: center;
-     margin-top: 3px;
+     font-size: 40px;
+     margin-top: 30px;
   }
-  .secondbox h3{
-     text-align:center ;
+  .secondbox h2{
+    text-align:center ;
+    justify-content: center;
+    margin: 30px 20px 10px  20px;
+    /* border: 1px solid red;    */
   }
  
   .secondbox p{
-     text-align: center;
-     margin-top: -25px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
   }
  
  
  /* third box */
  
   .topbox .thirdbox{
-     position: static;
+     position: relative;
      width: calc(400px - 30px);
      height: calc(300px-30px);
      background-color: #2581d6;
@@ -247,43 +232,48 @@ position: relative;
      margin: 15px;
      box-sizing: border-box;
      overflow: hidden;
-     border-radius: 10px;
-     color: white;
-
+     border-radius: 30px;
  
   }
   .thirdbox .icon{
     text-align: center;
-     margin-top: -5px;
+     font-size: 40px;
+     margin-top: 30px;
   }
-  .thirdbox h3{
-     text-align:center ;
+  .thirdbox h2{
+    text-align:center ;
+    justify-content: center;
+    margin: 30px 20px 10px  20px;
+    /* border: 1px solid red;  */
   }
  
   .thirdbox p{
-     text-align: center;
-     margin-top: -25px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
   }
  
   /* hovor css*/
   
   .topbox .firstbox:hover{
     color: aliceblue;
+    background-color: #000000;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
   }
   .topbox .secondbox:hover{
     color: rgb(255, 255, 255);
+    background-color: #000000;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
   }
   .topbox .thirdbox:hover{
     color: rgb(255, 255, 255);
-    /* width: calc(400px - 32px);
-    height: calc(301px-31px); */
+    background-color: #000000;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
-  } 
+  }
 
 
-  /* resume page  */
+
+  /* Resume page  */
 
 
   #resume h1{
@@ -298,18 +288,22 @@ position: relative;
      height: 35px;
      justify-content: center;
      margin-top: 45px;
+     border-radius: 25px;
    
 }
 .resumeheading h3{
     margin-left: 40px;
+    padding:5px;
     
 }
 ul{
     color: white;
+    margin-left: 70px;
 }
 
 .summarytext  p{
     color: white;
+    margin-left: 90px;
 }
 
 
@@ -334,90 +328,40 @@ ul{
  }
 
 
- /* contact us page  */
 
- 
-.Us button {
-    color: rgb(0, 0, 0);
-    background-color: aliceblue;
-    font-weight: bold;
-    border-radius: 25px;
-    font-size: 15px;
-    padding: 10px;
-    border: 1px solid black;
+
+
+
+ .main {
+    font-size: 25px;
+    padding-top: 150px;
+    padding-left: 80px;
+    display: flex;
+    margin-bottom: 100px;
 }
 
-.Us button:hover {
-    color: red;
-    background-color:   rgb(106, 80, 80);
-}
-
-.but img {
-    background-color: white;
-    border-radius: 25px;
-    width: 45px;
-    margin-top: 30px;
-}
-
-.but img:hover {
-    width: 50px;
-}
-
-.icons {
-    height: auto;
-    width: 104vh;
+.Us {
+    border: 3px solid rgb(82, 50, 50);
+    height: 460px;
+    border-radius: 80px;
+    width: 460px;
     text-align: center;
-
 }
 
-
-.icons h1 {
-    font-size: 40px;
-    margin-top: 200px;
-    margin-left: -70px;
-    margin-right: 0%;
-    padding: 20px;
-}
-
-.icons h2{
-    color:#C4EAFA ;
-    margin-bottom: 50px;
-}
-
-.icons img {
-    border: 1px solid white;
-    width: 30px;
-    padding: 10px;
-    border-radius: 13px;
-    height: 30px;
-}
-
-.icons img:hover {
-    width: 40px;
-    transition: 0.4s;
-    background-color: rgb(196, 234, 240);
-}
-
-
-  
-  
-form{
-    margin-left: 800px;
-    margin-top: -250px;
-    margin-right: 250px;
-    border: 3px solid rgb(255, 255, 255);
-    
-    padding: 12px 30px;
-        
-}
- h1{
-    color: rgb(225, 17, 17);
-    font-size: 30px;
+.Us h1 {
+    border: 1px;
+    width: 350px;
+    margin-left: 50px;
     text-align: center;
-    
-    
-    
+    border-radius: 40px;
+    color: rgb(255, 0, 0);
 }
+
+.Us h1:hover {
+    color: rgb(255, 0, 0);
+
+}
+
 .name,.number,.email {
     border: 3px solid white;
     width: 300px;
@@ -432,31 +376,88 @@ form{
 .number:hover,
 .email:hover,
 .me textarea:hover {
-    border-color: rgb(255, 0, 0);
+    border-color: red;
 }
 
-.us textarea {
+ textarea {
     height: 45px;
     width: 250px;
-    border: 2px solid;
-    margin: 10px 33px;
+    border: 2px solid black;
+    margin: 10px;
 }
 
-.us button{
-    margin-left: 130px;
+.Us button {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid black;
 }
 
-.us button:hover{
-    background-color: rgb(255, 0, 0);
-    
+.Us button:hover {
+    color: rgb(9, 7, 7);
+    background-color: rgb(99, 76, 76);
+}
+
+   /* media buttons */
+
+   
+ #media{
+    background-color: rgb(244, 243, 243);
+    border-radius: 20px;
+    width: 35px;
+    margin-top: 30px;
     
 }
-.copy{
-    color: white;
+
+#media:hover {
+    width: 40px;
+} 
+
+.icons {
+    height: auto;
+    width: 104vh;
     text-align: center;
-    margin-top: 110px;
+    margin-left: 200px    ;
+
 }
 
 
+.icons h1 {
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 293px;
+    /* border: 2px solid red; */
+}
+.follow{
+    color: white;
+    font-size: 40px;
+    margin-top: 156px;
+    margin-bottom: 1%;
+    margin-right: 45%;
+}
 
+.icons img {
+    border: 1px solid white;
+    width: 30px;
+    padding: 10px;
+    border-radius: 13px;
+    margin-left: 50px;
+}
 
+.icons img:hover {
+    width: 35px;
+    transition: 0.4s;
+    background-color: rgb(196, 234, 240);
+}
+
+.copy h3 {
+    border: 1px solid white;
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}

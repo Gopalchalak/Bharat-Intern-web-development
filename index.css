@@ -110,7 +110,7 @@ width:800px;
         top :-360px;
     }
 }
-
+    
 .dynamic-txt li{
 position: relative;
 }
@@ -261,17 +261,17 @@ position: relative;
   
   .topbox .firstbox:hover{
     color: aliceblue;
-    background-color: #000000;
+    background-color: #00ff84;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
   }
   .topbox .secondbox:hover{
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: #00ff84;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
   }
   .topbox .thirdbox:hover{
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: #00ff84;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
   }
 

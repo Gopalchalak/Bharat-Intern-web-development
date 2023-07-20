@@ -5,7 +5,7 @@ body{
     margin: 0%;
     padding: 0%;
     background-color: black;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'helvetica neve', helvetica, 'Ubuntu', sans-serif;
     
 }
 #home{
@@ -18,7 +18,6 @@ body{
 
 
 .container{
- /* border: 2px solid red; */
  background-color: transparent;
  display: flex;
  height: 8vh;
@@ -40,28 +39,39 @@ justify-content: space-between;
     
 }
 
-.language{
-    border: 3px solid white;
-    padding: 5px 10px 5px 10px;
-    justify-content: left;
-    height: 4vh;
+.btn{
+    
+     padding: 2px 3px 16px 3px;
+    justify-content: left;   
+    height: 2vh; 
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 6px;
+    
+    float: left;
     
 }
-#lang-switch {
+.lan-btn1 svg{
     color: white;
+    height: 20px;
+    width: fit-content;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-left: 10px;
+    padding: 1px 2px 3px 4px;
+    border-radius: 5px;
 
 }
 
-#lang-switch{
+.lan-btn1 select{
+    padding: 6px 15px 7px 41px; 
+    background: transparent;
+    color: #fff;
     border: none;
-    background-color: transparent;
-    cursor: pointer;
 }
- /* fa-globe{
-    color: black;
-    align-items: center;
 
-} */
+
 
 
 .container button{
@@ -70,38 +80,38 @@ justify-content: space-between;
     font-size: 17px;
     color: white;
     cursor: pointer;
-    width :fit-content;
+    width:fit-content;
     border-radius: 5px;
     margin-left: 30px;
 }
 
 .mainheader h1{
+    display: flex;
     color: white;
     text-align: center;
     font-size: 55px;
-    padding-top: 10px;
-    /* border: 2px solid red; */
     position: relative;
     margin-top: 180px;
+    justify-content: center;
    
 }
 .mainheader h2{
     color: white;
     text-align: center;
-    font: 40px;
-    margin-top: 1px;
-    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    font-weight: 400;
+    
 
 }
 .maincontact p{
     color: white;
     text-align: center;
-    font-size: 30px;
-    /* border: 2px solid red; */
+    font-size:1.25rem;
+   
 }
 
 .maincontact input{
-    /* border: 2px solid red; */
+   
     height: 6vh;
     float: left;
     width: 500px;
@@ -202,7 +212,7 @@ justify-content: space-between;
 .desc-1 h1{
     color: white;
     font-size: 3rem;
-    /* padding: 1rem; */
+    
     padding-left: 0;
 
 }
@@ -304,6 +314,8 @@ justify-content: space-between;
 
 hr{
     border-top: 8px solid rgb(69, 69, 69);
+    margin-top: 50px;
+    
 }
 
 /* Frequently Asked Questions  page css */
@@ -317,7 +329,7 @@ hr{
     align-items: center;
     margin: auto;
     
-
+}
 
 .que-list h1{
     color: white;
@@ -325,6 +337,7 @@ hr{
     padding: 3rem 0 0 0;
    
 }
+
 .tittle{
     background-color: #303030;
     padding: 25px 30px;
@@ -338,7 +351,7 @@ hr{
     
 }
    
-}
+
 
 .tittle:hover{
     background: #5d5c5c;
@@ -396,10 +409,7 @@ hr{
     transform: rotate(-45deg);
 }
 
- /* .que-item:target .que-item::before {
-    height: 0;
-    opacity: 0;
-} */
+
 
 
 .que-form{
@@ -436,3 +446,80 @@ hr{
     padding: 10px 25px 30px 25px;
     cursor: pointer;
 }
+
+.footer-list{
+    color: white;
+    width: 100%;
+    height: auto;
+   
+
+}
+
+.footer-list  .que-call{
+   margin-top: 100px;
+   margin-left: 170px;
+
+   
+} 
+.call a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.listitem{
+    width: 60%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left: 130px;
+   
+}
+
+
+
+.listitem li{
+    cursor: pointer;
+    position: relative;
+    width :fit-content;
+    
+    margin-bottom: 20px;
+    text-decoration:underline;
+    list-style: none;
+    font-family:'Ubuntu', sans-serif;
+
+} 
+
+.lan-btn{
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 5px;
+    margin-left: 170px;
+}
+
+.lan-icon svg{
+    height: 20px;
+    width: fit-content;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 2px;
+   margin-left: 15px;
+
+   
+}
+
+.lan-btn select{
+    padding: 6px 5px 6px 35px; 
+    background: transparent;
+    color: #fff;
+ 
+   
+}
+
+.lastpara{
+    margin-top: 30px;
+    margin-left: 170px;
+    font-family:'Ubuntu', sans-serif;;
+}
+
+

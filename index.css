@@ -138,9 +138,9 @@ position: relative;
 .aboutHeader{
     color: red;
     font-size: 50px;
-    
+    text-align: center;
     margin-top: 300px;  
-    /* border: 2px solid red; */
+    
     
 }
 
@@ -149,7 +149,8 @@ position: relative;
     font-size: 25px;
     text-align: justify;
     margin: 50px 30px 30px 30px;
-
+ text-align:center;
+ justify-content: center;
 }
 
 .topbox{
@@ -386,9 +387,10 @@ ul{
  textarea {
     height: 45px;
     width: 250px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     margin: 10px;
 }
+
 
 .Us button {
     color: rgb(0, 0, 0);
